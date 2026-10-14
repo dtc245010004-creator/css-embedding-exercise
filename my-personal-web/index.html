@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành nhúng CSS vào HTML</title>
+
+    <!-- Cách 3: External Style (Nhúng file CSS ngoài bằng thẻ <link>) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Cách 2: Internal Style (Nhúng CSS trực tiếp trong thẻ <style> ở <head>) -->
+    <style>
+        .internal-title {
+            color: #dc2626; /* Màu đỏ */
+        }
+        .internal-text {
+            color: #b91c1c; /* Màu đỏ đậm */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bài tập: 3 Cách nhúng CSS vào trang HTML</h1>
+
+    <!-- ================== PHẦN 1: INLINE STYLE ================== -->
+    <div class="box">
+        <h2>Phần 1: Sử dụng Inline Style (thuộc tính style trực tiếp trên thẻ)</h2>
+        <h3 style="color: #2563eb;">Tiêu đề: Học lập trình Web</h3>
+        <p style="color: #1d4ed8;">Đây là đoạn văn bản được đổi màu xanh dương bằng Inline CSS trực tiếp trong thuộc tính style của thẻ.</p>
+    </div>
+
+    <!-- ================== PHẦN 2: INTERNAL STYLE ================== -->
+    <div class="box">
+        <h2>Phần 2: Sử dụng Internal Style (thẻ &lt;style&gt; trong phần &lt;head&gt;)</h2>
+        <h3 class="internal-title">Tiêu đề: Ngôn ngữ định kiểu CSS</h3>
+        <p class="internal-text">Đây là đoạn văn bản được đổi màu đỏ thông qua class được định nghĩa trong thẻ style ở phần head.</p>
+    </div>
+
+    <!-- ================== PHẦN 3: EXTERNAL STYLE ================== -->
+    <div class="box">
+        <h2>Phần 3: Sử dụng External Style (liên kết tới file style.css bên ngoài)</h2>
+        <h3 class="external-title">Tiêu đề: Tách biệt cấu trúc và giao diện</h3>
+        <p class="external-text">Đây là đoạn văn bản được đổi màu xanh lá bằng các class viết trong file style.css riêng biệt.</p>
+    </div>
+
+</body>
+</html>
